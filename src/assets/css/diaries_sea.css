@@ -1,0 +1,219 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap .sea {
+    display: flex;
+}
+
+.wrap .sea__check {
+    width: 40px;
+    height: 190px;
+    background-color: #D3E0FF;
+    margin-top: 52px;
+    border-radius: 0 20px 20px 0;
+}
+
+.wrap .sea__check:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.wrap .sea__check-image {
+    height: 110px;
+    display: flex;
+    margin: auto;
+    margin-top: 37px;
+}
+
+.wrap.page1 .sea__diary {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap.page2 .sea__diary {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.wrap.page1 .seaDiary_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap.page2 .seaDiary_top {
+    display: flex;
+    width: 588px;
+    margin-top: 42px;
+    margin-bottom: 20px; 
+}
+
+.wrap.page1 .sea__diary-image {
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.wrap.page2 .sea__diary-image {
+    height: 60px;
+    margin-right: 17px;
+}
+
+/* Today's City Title */
+.wrap.page1 .sea__diary-title {
+    font-size: 32px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700; /* Bold font weight */
+    color: #164BB0;
+    margin-bottom: 20px;
+}
+
+.wrap.page2 .sea__diary-title {
+    font-size: 32px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700; /* Bold font weight */
+    color: #164BB0;
+    padding-top: 12px;
+}
+
+.wrap .sea__diary-date {
+    width: 468px;
+    height: 40px;
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap .sea__diary-date-container {
+    width: 468px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Title Edit */
+.wrap .sea__diary-title-edit-input {
+    width: 591px;
+    height: 33px;
+    color: #C6C9CE;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 26px;
+    line-height: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #4173D4;
+    outline: none;
+    padding-bottom: 10px;
+}
+
+.wrap .sea__diary-title-edit-input::placeholder {
+    color: #C6C9CE;
+}
+
+.wrap.page1 .sea__diary-another {
+    width: 930px;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap.page2 .sea__diary-another {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrap .sea__diary-another-reveal {
+    width: 159px;
+    height: 30px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin-right: 13px;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+.wrap .sea__diary-another-reveal-btn {
+    height: 18px;
+    background-color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 600;
+    color: #7D7D7D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+}
+
+.wrap .sea__diary-another-reveal-btn--only {
+    width: 42px;
+}
+
+.wrap .sea__diary-another-reveal-btn--subscribe {
+    width: 53px;
+}
+
+.wrap .sea__diary-another-reveal-btn--all {
+    width: 43px;
+}
+
+.wrap .sea__diary-another-reveal-btn--selected {
+    background-color: #E8E6E6;
+    color: #7D7D7D;
+}
+
+.wrap .sea__diary-another-submit {
+    width: 55px;
+    height: 30px;
+    background-color: #4173D4;
+    margin-right: 4px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.wrap .sea__diary-another-submit:hover {
+    background-color: #D3E0FF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.wrap.page1 .sea__diary-texts {
+    width: 930px;
+    height: 492px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #164BB0;
+    margin-bottom: 50px;
+}
+
+.wrap.page2 .sea__diary-texts {
+    width: 100%;
+    height: 492px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #164BB0;
+    margin-bottom: 50px;
+}
+
+.wrap .sea__diary-texts p {
+    font-size: large;
+}

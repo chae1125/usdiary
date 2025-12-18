@@ -1,0 +1,207 @@
+/* Signup Page CSS */
+
+.SignUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.SignUp-page__form-title {
+  text-align: left;
+  width: 500px;
+  margin: 0 0 20px 0;
+}
+
+.SignUp-page__form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.SignUp-page__input-group {
+  margin-bottom: 12px;
+}
+
+.SignUp-page__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11pt;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.SignUp-page__input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.SignUp-page__input-wrapper input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40px;
+}
+
+.SignUp-page__input-wrapper input::placeholder {
+  font-size: 12pt;
+  font-family: 'Inter', sans-serif;
+}
+
+.SignUp-page__input-wrapper .SignUp-page__input-check-button {
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12px;
+  margin-left: 10px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+
+.SignUp-page__input-check-button:hover {
+  background-color: #333;
+}
+
+.SignUp-page__input[type="text"],
+.SignUp-page__input[type="password"],
+.SignUp-page__input[type="email"],
+.SignUp-page__input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40px;
+}
+
+.SignUp-page__date-gender-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.SignUp-page__input-date,
+.SignUp-page__input-gender {
+  width: 48%;
+}
+
+.SignUp-page__input-date input,
+.SignUp-page__input-gender select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.SignUp-page__submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.SignUp-page__submit-button:hover {
+  background-color: #333;
+}
+
+.SignUp-page__input::placeholder {
+  color: #999;
+}
+
+.SignUp-page__popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.SignUp-page__popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 380px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SignUp-page__popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.SignUp-page__popup-title {
+  margin-bottom: 20px;
+}
+
+.SignUp-page__code-inputs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.SignUp-page__code-input {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.SignUp-page__code-submit-button {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.SignUp-page__code-submit-button:hover {
+  background-color: #656565;
+}
+
+.SignUp-page__error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

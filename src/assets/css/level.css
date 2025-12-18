@@ -1,0 +1,119 @@
+.wrap .profile-contents {
+    margin: auto;
+    width: 65%;
+    min-width: 681px;
+    position: relative;
+}
+
+.wrap .profile-level {
+    height: 560px;
+    margin-top: 76px;
+    justify-content: space-between;
+}
+
+.profile-level_name {
+    font-size: 19.5px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.profile-level hr {
+    border: 1.5px solid #B9B9B9;
+    margin-top: 10px;
+}
+
+.profile-level_ment {
+    font-size: 12px;
+    margin-left: 4px;
+    margin-top: 18px;
+}
+
+.profile-level_boxes {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 37px;
+}
+
+.profile-level_box {
+    width: 25%;
+    height: 50px;
+    background-color: #F3F3F3;
+    display: flex;
+    text-align: center;
+    border: 1px solid #757575;
+}
+
+.profile-level_box img {
+    height: 25px;
+    margin: auto;
+    margin-right: 12px;
+    opacity: 0.5;
+}
+
+.profile-level_box_text {
+    margin: auto;
+    margin-left: 0px;
+    color: #757575;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile-level_box.active {
+    background-image:  linear-gradient(0deg, #5D8AC0, 50%, #313366);
+}
+
+.profile-level_box.active img {
+    opacity: 1;
+}
+
+.profile-level_box.active .profile-level_box_text{
+    color: #ffffff;
+}
+
+.profile-level #crescent {
+    border-radius: 10px 0px 0px 10px;
+    border-right: 0.5px solid #757575;
+}
+.profile-level #firstQuarter {
+    border-left: 0.5px solid #757575;
+    border-right: 0.5px solid #757575;
+}
+.profile-level #fullMoon {
+    border-left: 0.5px solid #757575;
+    border-right: 0.5px solid #757575;
+}
+.profile-level #oldMoon {
+    border-left: 0.5px solid #757575;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.profile-level table {
+    width: 100%;
+    height: 360px;
+    color: #979797;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.profile-level th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+#tr1 {
+    height: 33px;
+    border-top: 3px solid #B9B9B9;
+}
+
+#tr5 {
+    border-bottom: 3px solid #B9B9B9;
+}
+
+.profile-level_ment2 {
+    font-size: 12px;
+    margin-left: 4px;
+    margin-top: 12px;
+    color: #979797;
+}
+

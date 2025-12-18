@@ -1,0 +1,131 @@
+/* friend Page CSS */
+.friend-page__container {
+    position: relative;
+    min-height: 1250px;
+    padding-bottom: 220px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 100px;
+    width: 100%;
+}
+
+.friend-page__header {
+    display: flex;
+    /* 수직 정렬 */
+    align-items: center;
+    /* 좌측 정렬 */
+    height: 180px;
+    /* 헤더의 높이 설정 */
+    margin-top: 20px;
+}
+
+.friend-page__heading {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: clamp(55px, 4.5vw, 110px);
+    letter-spacing: -1pt;
+    line-height: 1.2;
+    color: #75388B;
+}
+
+.friend-page__description {
+    font-family: 'Noto Sans', sans-serif;
+    margin: 40px;
+    width: 600px;
+    font-size: clamp(13px, 1vw, 30px);
+    color: #828282;
+    line-height: 2.0;
+}
+
+.friend-page__filter-box {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 10px;
+    width: 268px;
+}
+
+.friend-page__filter-option {
+    background-color: #fff;
+    font-size: 10pt;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.friend-page__filter-option:hover {
+    background-color: #ddd;
+}
+
+.friend-page__tree-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url('../../assets/images/friend_background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 330px;
+    height: 1462px;
+    z-index: -1;
+}
+
+
+
+.friend-page__diary-cards {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+.friend-page__diary-cards .diary-card {
+    width: 270px;
+    /* 4개의 카드가 한 줄에 배치되도록 */
+    box-sizing: border-box;
+}
+
+
+.friend-page__pagination {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.friend-page__pagination button {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #DDACEE;
+    /* 테두리 색상 */
+    color: #333;
+    /* 기본 글씨 색상 */
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.friend-page__pagination button.active {
+
+    color: #9A41B9;
+    /* 선택된 버튼의 글씨 색상 */
+    border-color: #9A41B9;
+    /* 선택된 버튼의 테두리 색상 */
+}
+
+.friend-page__pagination button:hover {
+    background-color: #ddd;
+}

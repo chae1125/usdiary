@@ -1,0 +1,109 @@
+/* diaryCard.css */
+
+/* Card container with border */
+.diary-card {
+    border: 2px solid;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.diary-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Header with nickname and like button */
+.diary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.diary-nickname {
+    font-weight: bold;
+    color: #333;
+}
+
+.diary-like {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+}
+
+.diary-like svg {
+    width: 24px;
+    height: 24px;
+}
+
+.diary-image-container {
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+/* Image styling */
+.diary-image {
+    width: calc(100% + 20px); /* Adjust to account for padding */
+    height: 150px;
+    object-fit: cover;
+    margin-left: -10px; /* Compensate for padding */
+    margin-right: -10px; /* Compensate for padding */
+}
+/* Content styling */
+.diary-content {
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.diary-title {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.diary-date {
+    font-size: 12px;
+    color: #8a8a8a;
+    margin: 0 0 8px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.diary-summary {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Forest board */
+.forest-border {
+    border: 2px solid #B3D3A8;
+}
+
+/* City board */
+.city-border {
+    border: 2px solid #9EA3AB;
+}
+
+/* Sea board */
+.sea-border {
+    border: 2px solid #7D9FE3;
+}
+
+/* Friend page common border */
+.friend-border {
+    border: 2px solid #C47BDD; /* Golden border for friend page */
+}

@@ -1,0 +1,565 @@
+/* Reset */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sea Component */
+.sea__special {
+    display: flex;
+}
+
+/* Place Section */
+.sea_back-button {
+    width: 148px;
+    height: 36px;
+    background-color: #D3E0FF;
+    margin-top: 9px;
+    font-size: 16px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    color: #164BB0;
+    margin-left: 267px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.specialDay {
+    min-width: 415px;
+    height: 803px;
+    background-color: #D3E0FF;
+    padding: 50px 34px 0px 34px; 
+    border-radius: 0px 0px 50px 0px;
+}
+
+.specialDay-title {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 6px;
+    align-items: center;
+}
+
+.specialDay-title-name {
+    font-size: 30px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700; /* Bold font weight */
+    color: #164BB0;
+    margin-right: 8px;
+}
+
+.specialDay-choice1 {
+    width: 100%;
+    height: 432px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+}
+
+.specialDay-choice1-box {
+    width: 148px;
+    height: 170px;
+    border-radius: 10px;
+    border-color: #DBDBDB;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin: auto;
+}
+
+.specialDay-choice1-box:hover {
+    width: 148px;
+    height: 170px;
+    border-radius: 10px;
+    border-color: #DBDBDB;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    margin: auto;
+    transition: opacity 0.3s ease;
+}
+
+.specialDay-choice1-box img {
+    width: 128px;
+    margin: auto;
+    display: block;
+    margin-top: 12px;
+}
+
+.specialDay-choice1-box-name {
+    width: 50px;
+    height: 16px;
+    background-color: #696969;
+    color: #ffffff;
+    font-size: 11px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600; /* Bold font weight */
+    margin: auto;
+    margin-top: 7px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.specialDay-choice2 {
+    width: 100%;
+    height: 432px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+}
+
+.specialDay-choice2-top {
+    display: flex;
+}
+
+.specialDay-choice2 .back_arrow {
+    width: 8px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.specialDay-choice2-top-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4C4C4C;
+    line-height: 24px;
+}
+
+.specialDay-choice2 hr {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #DEDEDE;
+    margin-top: 4px;
+}
+
+.specialDay-choice2-places {
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    overflow: auto;
+}
+
+.specialDay-choice2-places::-webkit-scrollbar {
+    width: 5px;
+}
+.specialDay-choice2-places::-webkit-scrollbar-thumb {
+    background-color: #828282;
+    border-radius: 10px;
+}
+.specialDay-choice2-places::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+} 
+
+.specialDay-choice2-places #cityPlace {
+    height: 750px;
+}
+
+.specialDay-choice2-places-left {
+    width: 50%;
+}
+
+.specialDay-choice2-places-left-thg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.specialDay-choice2-places-left #sea_illustration {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left #park {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left #stream {
+    width: 125px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left #cafe {
+    width: 105px;
+}
+
+.specialDay-choice2-places-left #restaurant {
+    width: 110px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left #gallery {
+    width: 110px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left #themepark {
+    width: 150px;
+    margin-top: 5px;
+}
+
+.specialDay-choice2-places-left #auditorium {
+    width: 110px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-left-name {
+    width: 50px;
+    height: 20px;
+    background-color: #164BB0;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.specialDay-choice2-places #naturePlace {
+    height: 550px;
+}
+
+.specialDay-choice2-places-right {
+    width: 50%;
+    padding-top: 80px;
+}
+
+.specialDay-choice2-places-right #mountain {
+    width: 125px;
+}
+
+.specialDay-choice2-places-right #river {
+    width: 125px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-right #valley {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-right #library {
+    width: 130px;
+}
+
+.specialDay-choice2-places-right #theater {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-right #shoppingmall {
+    width: 115px;
+    margin-top: 10px;
+}
+
+.specialDay-choice2-places-right #stadium {
+    width: 115px;
+    margin-top: 10px;
+}
+
+.specialDay-choice3 {
+    width: 100%;
+    height: 432px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+}
+
+.specialDay-choice3-top {
+    display: flex;
+}
+
+.specialDay-choice3 .back_arrow {
+    width: 8px;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.specialDay-choice3-top-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4C4C4C;
+    line-height: 24px;
+}
+
+.specialDay-choice3 hr {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #DEDEDE;
+    margin-top: 4px;
+}
+
+.specialDay-choice3-places {
+    width: 100%;
+    /* height: 600px; */
+    display: flex;
+    overflow: auto;
+}
+
+.specialDay-choice3-places::-webkit-scrollbar {
+    width: 5px;
+}
+.specialDay-choice3-places::-webkit-scrollbar-thumb {
+    background-color: #828282;
+    border-radius: 10px;
+}
+.specialDay-choice3-places::-webkit-scrollbar-track {
+    background-color: #D9D9D9;
+} 
+
+.specialDay-choice3-places #cityPlace {
+    height: 100%;
+}
+
+.specialDay-choice3-places-left {
+    width: 50%;
+}
+
+.specialDay-choice3-places-left-thg {
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+
+.specialDay-choice3-places-left-thg #seashell {
+    width: 115px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #umbrage {
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #flower {
+    width: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #duck {
+    width: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #bicycle {
+    width: 145px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #watermelon {
+    width: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #coffee {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #book {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #plate {
+    width: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #film {
+    width: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #palette {
+    width: 130px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #shoppingbag {
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #balloon {
+    width: 85px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #uniform {
+    width: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-left-thg #ticket {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.specialDay-choice3-places-right {
+    width: 50%;
+    padding-top: 60px;
+}
+
+.specialDay-choice3-places-left-thg:hover #seashell,
+.specialDay-choice3-places-left-thg:hover #umbrage,
+.specialDay-choice3-places-left-thg:hover #flower,
+.specialDay-choice3-places-left-thg:hover #duck,
+.specialDay-choice3-places-left-thg:hover #bicycle,
+.specialDay-choice3-places-left-thg:hover #watermelon,
+.specialDay-choice3-places-left-thg:hover #coffee,
+.specialDay-choice3-places-left-thg:hover #book,
+.specialDay-choice3-places-left-thg:hover #plate,
+.specialDay-choice3-places-left-thg:hover #film,
+.specialDay-choice3-places-left-thg:hover #palette,
+.specialDay-choice3-places-left-thg:hover #shoppingbag,
+.specialDay-choice3-places-left-thg:hover #ballon,
+.specialDay-choice3-places-left-thg:hover #uniform,
+.specialDay-choice3-places-left-thg:hover #ticket {
+    filter: blur(2px);
+}
+
+.specialDay-choice3-places-left-thg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: rgb(0, 0, 0);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 150px;
+}
+  
+.specialDay-choice3-places-left-thg:hover .specialDay-choice3-places-left-thg-text {
+    opacity: 1;
+}
+
+.specialDay-choice3-places-left-thg-text-emotion {
+    background-color: #ffffff;
+    display: inline-block; /* div 크기를 콘텐츠 크기에 맞춤 */
+    width: auto; /* 가로 길이를 자동으로 맞춤 */
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 7px;
+    font-size: 10px;
+    padding: 0px 10px;
+}
+
+.specialDay-choice3-places-left-thg-text-content {
+    word-break: keep-all;
+    width: 100px;
+    margin: auto;
+    font-size: 9px;
+}
+
+
+
+
+
+
+.specialDay-emotion {
+    width: 100%;
+    height: 26px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    margin-top: 5px;
+    color: #BCBCBC;
+    font-size: 10px;
+    line-height: 26px;
+    padding: 0px 9px;
+}
+
+.specialDay-emotion input {
+    color: #000000;
+    font-size: 10px;
+    width: 100%;
+    border-width: 0;
+}
+
+.specialDay-emotion input:focus {
+    outline: none;
+}
+
+.specialDay-emotion input::placeholder {
+    color: #BCBCBC;
+    font-size: 10px;
+}
+
+.specialDay-memo {
+    width: 100%;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 6px;
+    color: #BCBCBC;
+    font-size: 10px;
+    line-height: 26px;
+    padding: 0px 9px;
+}
+
+.specialDay-memo textarea {
+    color: #000000;
+    font-size: 10px;
+    width: 100%;
+    border-width: 0;
+    border: none;
+    resize: none;
+    margin-top: 5px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.specialDay-memo textarea:focus {
+    outline: none;
+}
+
+.specialDay-memo textarea::placeholder {
+    color: #BCBCBC;
+    font-size: 10px;
+}
+
+.specialDay-memo textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+.specialDay-save {
+    width: 55px;
+    height: 30px;
+    background-color: #4173D4;
+    margin-right: 4px;
+    margin-top: 7px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #ffffff;
+    float: right;
+}

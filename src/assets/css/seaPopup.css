@@ -1,0 +1,453 @@
+/* 팝업 오버레이 */
+.sea-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(81, 81, 81, 0.3); /* 어두운 배경 오버레이 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* 팝업이 가장 위에 있도록 설정 */
+    overflow: auto;
+}
+
+/* 팝업 컨텐츠 박스 */
+.sea-popup__content {
+    background-color: white; /* 팝업 박스의 배경색 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+    padding: 20px;
+    max-width: 1100px;
+    width: 90%;
+    max-height: 80vh;
+     overflow-y: scroll; /* 세로 스크롤 가능하게 설정 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+    position: relative;
+}
+
+.sea-popup__content::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, and Opera */
+}
+
+.sea-popup__content {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.sea-popup__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sea-popup__mini-sea-image {
+    width: 60px; /* 원하는 크기로 조정 */
+    height: 50px; /* 원하는 크기로 조정 */
+}
+
+.sea-popup__sea {
+    margin-top: 5px;
+    color: #3C5FB7;
+    font-family: 'Inter', sans-serif;
+}
+
+.sea-popup__title-container {
+    
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sea-popup__diary-title {
+    display: inline-flex;
+    margin: 5px;
+    color: #373737;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sea-popup__title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #3361BA;
+}
+
+/* 다이어리 내용 테두리 스타일 */
+.sea-popup__diary-content {
+    border: 1px solid #3361BA; /* 99B477 색상 테두리 */
+    border-radius: 2px; /* 모서리를 살짝 둥글게 */
+    padding: 15px; /* 내부 여백 */
+    margin-top: 20px; /* 위쪽 간격 */
+    font-family: 'Noto Sans', sans-serif; /* 글꼴 설정 */
+    font-size: 16px; /* 글씨 크기 */
+    color: #373737; /* 다이어리 글씨 색 */
+    height: 50vh; /* 최대 높이 설정, 50% 뷰포트 높이로 설정 */
+    overflow-y: auto; /* 세로 스크롤 자동 설정 */
+}
+
+.sea-popup__diary-content::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.sea-popup__diary-content::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.sea-popup__diary-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sea-popup__diary-content::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}
+
+
+/* 댓글 입력 섹션 */
+.sea-popup__comment-input-section {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 800px;
+}
+
+/* 유저 프로필 이미지 */
+.sea-popup__user-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+/* 댓글 입력 필드 */
+.sea-popup__comment-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #3361BA;
+    border-radius: 0;
+    margin-right: 10px;
+    outline: none;
+}
+
+.sea-popup__comment-input:focus {
+    border: none; /* 포커스 시에도 테두리 제거 */
+    border-bottom: 1px solid #ccc; /* 포커스 시에도 아래쪽 밑줄 유지 */
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    box-shadow: none; /* 포커스 시 그림자 제거 */
+}
+
+/* 댓글 제출 버튼 */
+.sea-popup__comment-submit-button {
+    background-color: #7D9FE3;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* 댓글 섹션 */
+.sea-popup__comments-section {
+    margin-top: 20px;
+    border: solid 1px #3361BA;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 800px;
+}
+
+.sea-popup__comments-section--no-comments {
+    padding-bottom: 20px; /* 하단 여백 추가 */
+}
+
+.sea-popup__comments-section--no-comments .sea-popup__no-comments-message {
+    border-top: none; /* 메시지의 상단 경계선 제거 */
+}
+
+/* 댓글 */
+.sea-popup__comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* 댓글 사이에 경계선 추가 */
+    padding-bottom: 10px; /* 경계선과 내용 간 여백 */
+    position: relative;
+}
+
+/* 댓글 프로필 이미지 */
+.sea-popup__comment-profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px; /* 프로필 사진과 댓글 내용 사이의 간격 */
+}
+
+/* 댓글 내용 섹션 */
+.sea-popup__comment-details {
+    flex-grow: 1;
+}
+
+/* 댓글 닉네임 */
+.sea-popup__comment-nickname {
+    font-weight: 600; /* Semi-Bold 효과 */
+    padding-left: 3px;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* 댓글 내용 */
+.sea-popup__comment-content {
+    padding: 3px;
+    margin-right: 30px;
+    font-size: 12px;
+    border: 1px solid transparent;
+}
+
+.sea-popup__comment-content--editable {
+    border: 1px solid #1a66cc; /* 수정 중인 댓글에 테두리 추가 */
+    border-radius: 5px;
+    background-color: #f0f8ff; /* 수정 중인 댓글에 배경색 추가 */
+    outline: none; /* 포커스 시 외부 경계선 제거 */
+}
+
+/* 댓글 없음 메시지 */
+.sea-popup__no-comments-message {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* 댓글 액션 버튼 섹션 */
+.sea-popup__comment-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    position: absolute; /* 버튼을 댓글 오른쪽에 절대 위치시키기 */
+    right: 0;
+}
+
+/* 댓글 수정 및 삭제 버튼 */
+.sea-popup__edit-button,
+.sea-popup__delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #7D7D7D; /* 수정 버튼 색상 */
+    margin-bottom: 5px;
+}
+
+/* 수정 댓글 입력 필드 */
+.sea-popup__edit-comment-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sea-popup__main-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-start; /* 기본적으로 좌측 정렬 */
+    align-items: flex-start;
+}
+
+.sea-popup__place-section {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    min-height: 500px;
+    width: 35%;
+    margin-left: -20px;
+    margin-right: 20px;
+    background-color: #D3E0FF;
+    padding: 30px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+.sea-popup__place-title {
+    font-size: 2rem;
+    color: #164BB0;
+    margin-bottom: 20px;
+    margin: 5px 0px 15px 0px;
+}
+
+.sea-popup__diary-section {
+    width: 70%;
+    min-width: 500px;
+    max-width: 930px;
+}
+
+.sea-popup__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+    margin-top: -10px;
+    margin-right: -5px;
+    margin-left: -5px;
+    min-width: 800px;
+}
+
+.sea-popup__header-left {
+    display: flex;
+    align-items: center;
+}
+
+.sea-popup__author-profile-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.sea-popup__author-nickname {
+    font-weight: bold;
+}
+
+.sea-popup__header-right {
+    display: flex;
+    align-items: center;
+}
+
+.sea-popup__report-button,
+.sea-popup__like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sea-popup__report-button img,
+.sea-popup__like-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.sea-popup__container {
+    display: flex;
+    justify-content: center; /* 자식 요소를 수평으로 중앙 정렬 */
+    align-items: center;
+    background-color: white;
+    height: 45vh;
+    width: 100%;
+    border-radius: 10px; /* 모서리를 둥글게 하고 싶다면 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 약간의 그림자를 추가 */
+    margin-top: 10px; /* h2와의 간격 */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.sea-popup__category-icon {
+    display: flex;
+    width: auto;
+    height: 40%;
+    transition: filter 0.1s ease;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+    position: relative; /* 메모와 이모션을 겹치기 위한 설정 */
+    z-index: 1; /* 아이콘이 메모와 이모션보다 아래에 있게 설정 */
+}
+
+.sea-popup__category-icon:hover {
+    filter: blur(3px); /* 아이콘에 블러 효과 적용 */
+    
+}
+
+.sea-popup__icon-1 {
+    width: auto;
+    height: 45%;
+}
+
+.sea-popup__icon-13 {
+    width: auto;
+    height: 60%;
+}
+
+.sea-popup__icon-3, .sea-popup__icon-9 {
+    width: auto;
+    height: 35%;
+}
+
+.sea-popup__icon-2, .sea-popup__icon-4, .sea-popup__icon-5, .sea-popup__icon-6, .sea-popup__icon-12, .sea-popup__icon-14 {
+    width: auto;
+    height: 50%;
+}
+
+.sea-popup__icon-11 {
+    width: auto;
+    height: 55%;
+}
+
+.sea-popup__icon-15 {
+    width: auto;
+    height: 30%;
+}
+
+/* 기본적으로 메모를 숨기기 */
+.sea-popup__icon-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s ease, filter 0.1s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: rgb(0, 0, 0);
+    text-align: center;
+    width: 150px;
+    z-index: 2;
+}
+
+
+.sea-popup__category-icon:hover + .sea-popup__icon-text {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: none;
+}
+
+/* 메모와 이모션 위에 마우스를 올려도 아이콘 블러 유지 */
+.sea-popup__icon-text:hover {
+    visibility: visible; /* 메모와 이모션이 계속 보이게 설정 */
+    opacity: 1;
+}
+
+.sea-popup__icon-emotion {
+    background-color: #ffffff;
+    display: inline-block; /* div 크기를 콘텐츠 크기에 맞춤 */
+    width: auto; /* 가로 길이를 자동으로 맞춤 */
+    height: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 7px;
+    font-size: 10px;
+    padding: 0px 10px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.sea-popup__icon-memo {
+    word-break: keep-all;
+    width: 100px;
+    margin: auto;
+    font-size: 9px;
+    filter: drop-shadow(0 4px 8px rgb(255, 255, 255));
+}
+

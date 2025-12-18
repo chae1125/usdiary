@@ -1,0 +1,79 @@
+.report-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.report-popup__content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+}
+
+.report-popup__buttons {
+    margin-top: 20px;
+}
+
+.report-popup__category-button {
+    background: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    transition: background 0.3s, color 0.3s;
+}
+
+.report-popup__category-button.selected {
+    background: black;
+    color: white;
+}
+
+.report-popup__custom-input {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #000; /* Black border */
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+
+.report-popup__submit-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 170px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.report-popup__cancel-button {
+    background: #ccc;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 170px;
+}

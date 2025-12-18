@@ -1,0 +1,179 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pro_page .pro_page-container {
+  display: flex;
+  width: 100%;
+  margin: 38px 40px 0px 40px;
+  border-radius: 15px;
+  background-image: linear-gradient(rgb(206, 224, 200), rgb(255, 255, 255) 160px);
+}
+
+.pro_page .profile-menu {
+  width: 219px;
+  height: 320px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1px;
+  border-radius: 15px 0px 15px 15px;
+  box-shadow: 0px 2px 3px 0px #9f9f9f;
+  padding-top: 8px;
+}
+
+.pro_page .profile-menu_content {
+  width: 195px;
+  height: 39px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  line-height: 39px;
+  padding-left: 12px;
+}
+
+.pro_page .profile-menu_content:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pro_page .profile-menu_content:hover img {
+  filter: none;
+}
+
+.pro_page .profile-menu_content:hover img {
+  filter: invert(36%) sepia(11%) saturate(811%) hue-rotate(178deg) brightness(52%) contrast(91%);
+  /* hover 상태일 때 이미지 색상 */
+}
+
+.pro_page .profile-menu_content.active {
+  background-color: #9FC393 !important;
+}
+
+.pro_page .profile-menu_content.active img {
+  filter: none;
+}
+
+.pro_page .profile-menu_content.active .profile-menu_content_name {
+  color: #ffffff;
+  /* active 상태일 때 이름 색상 */
+}
+
+.pro_page .profile-menu_content_img {
+  width: 35px;
+  height: 39px;
+  align-items: center;
+  display: flex;
+}
+
+.pro_page .profile-menu_content img {
+  height: 21px;
+  filter: invert(36%) sepia(11%) saturate(811%) hue-rotate(178deg) brightness(52%) contrast(91%);
+}
+
+.pro_page .profile-menu_content.active {
+  background-color: #545F71;
+  /* 선택된 메뉴 아이템의 배경 색상 */
+}
+
+.pro_page .profile-menu_content_name {
+  color: #545F71;
+}
+
+.pro_content-box {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.pro_profile-section {
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; 
+}
+
+.pro_profile-image-space {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  margin: 60px auto 20px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pro_additional-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: absolute;
+  top: calc(35% - 65px); 
+  left: calc(50.65% - 65px); 
+  z-index: 1; 
+}
+
+.pro_password-container {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.pro_password-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-weight: 400;
+  height: 40px;
+  margin-left: 80px;
+  margin-top: 60px;
+  outline: none;
+  padding: 20px;
+  transition: border-color .3s ease;
+  width: 400px;
+}
+
+.pro_password-input:focus {
+  border-color: #9FC393;
+  box-shadow: none;
+}
+
+.pro_confirm-button {
+  align-items: center;
+  background-color: #9fc393;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 20px;
+}
+
+.pro_confirm-button:hover {
+  background-color: #85b17a;
+}
+
+.pro_error-message {
+  color: red;
+  /* 에러 메시지 색상 */
+  font-size: 12px;
+  /* 글자 크기 */
+  text-align: center;
+  /* 가운데 정렬 */
+  margin-top: 20px;
+  /* 입력창과의 간격 */
+}

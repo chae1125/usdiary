@@ -1,0 +1,398 @@
+.wrap .myrate__profile-contents {
+    margin: auto;
+    width: 65%;
+    min-width: 681px;
+    position: relative;
+    display: flex;
+    /* 플렉스 박스 사용 */
+    flex-direction: column;
+    /* 세로 방향으로 정렬 */
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    width: 80%;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.profile-summary {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profile-tendency {
+    text-align: right;
+    margin: 0;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 1px;
+    height: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.progress-bar-fill {
+    background-color: #9FC393;
+    height: 100%;
+    border-radius: 1px;
+    transition: width 0.2s ease;
+}
+
+.calendar {
+    width: 80%;
+    text-align: center;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.calendar__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 20px 60px 20px;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.calendar__header button {
+    all: unset;
+    /* 모든 기본 스타일 제거 */
+    cursor: pointer;
+    /* 커서를 포인터로 변경 */
+    font-size: 1.5em;
+    /* 원하는 폰트 크기 설정 */
+    color: #000;
+    /* 버튼 글자 색상 */
+    transition: color 0.2s;
+    /* 색상 변화에 부드러운 전환 효과 추가 */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.calendar__header button:hover {
+    color: #757575;
+    /* 호버 시 색상 변화 */
+}
+
+
+.calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: calc(2vw + 5px);
+    /* 뷰포트 너비에 기반한 동적 간격 설정 */
+    justify-items: center;
+    width: 100%;
+    /* 부모 요소의 100%를 사용 */
+    box-sizing: border-box;
+    /* 패딩과 테두리를 포함한 너비 계산 */
+}
+
+
+.calendar__day {
+    width: calc(100% - 5px);
+    /* 최소 40px, 최대 60px */
+    aspect-ratio: 1;
+    /* 원하는 높이 설정 */
+    border-radius: 50%;
+    /* 동그라미 모양 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    /* 기본 배경색 */
+    font-size: clamp(18px, 3vw, 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.calendar__day.empty {
+    background-color: transparent;
+    /* 비어있는 날의 배경색 */
+    border: none;
+    /* 테두리 제거 */
+    box-shadow: none;
+}
+
+.calendar__day.today {
+    border: 4px solid #f4f4f4;
+    /* 원하는 테두리 색상 */
+    border-radius: 50%;
+    /* 원형으로 만들기 (선택 사항) */
+}
+
+.category-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* 오른쪽 정렬 */
+    margin-top: 40px;
+    /* 위쪽 여백 */
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.indicator-box-forest {
+    width: 20px;
+    /* 네모 크기 */
+    height: 20px;
+    /* 네모 크기 */
+    background-color: #B8D8AD;
+    /* 색상 */
+    margin-right: 10px;
+    /* 텍스트와의 간격 */
+    border-radius: 5px;
+}
+
+.indicator-box-city {
+    width: 20px;
+    /* 네모 크기 */
+    height: 20px;
+    /* 네모 크기 */
+    background-color: #D9D9D9;
+    /* 색상 */
+    margin: 0px 10px;
+    /* 텍스트와의 간격 */
+    border-radius: 5px;
+}
+
+.indicator-box-sea {
+    width: 20px;
+    /* 네모 크기 */
+    height: 20px;
+    /* 네모 크기 */
+    background-color: #A5DFDF;
+    /* 색상 */
+    margin: 0px 10px;
+    /* 텍스트와의 간격 */
+    border-radius: 5px;
+}
+
+.indicator-box-nothing {
+    width: 20px;
+    /* 네모 크기 */
+    height: 20px;
+    /* 네모 크기 */
+    border: 1px solid #c8c8c8;
+    margin: 0px 10px;
+    /* 텍스트와의 간격 */
+    border-radius: 5px;
+}
+
+.my-diaries {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-diaries-header {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.diary-box {
+    background-color: #ffffff;
+    /* 연한 회색 배경 */
+    padding: 10px;
+    border-radius: 5px;
+    /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.selected-date-box {
+    background-color: #f0f0f0;
+    /* 배경색 */
+    border-radius: 50px;
+    /* 둥근 모서리 */
+    padding: 10px 10px;
+    /* 패딩 */
+    margin: 10px 0px;
+    /* 상자와의 간격 */
+    text-align: center;
+    /* 텍스트 중앙 정렬 */
+    font-size: 14px;
+    /* 텍스트 크기 */
+    color: #333;
+    /* 텍스트 색상 */
+    width: 20%;
+    display: flex;
+    /* 플렉스 박스 사용 */
+    justify-content: center;
+    /* 가로 방향 중앙 정렬 */
+    align-items: center;
+    /* 세로 방향 중앙 정렬 */
+    margin-left: auto;
+    /* 왼쪽 여백 자동 설정 */
+    margin-right: auto;
+}
+
+.diary-cards {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 플렉스 박스 사용 */
+    justify-content: space-between;
+    /* 가로 방향 중앙 정렬 */
+    align-items: center;
+    margin-left: auto;
+    /* 왼쪽 여백 자동 설정 */
+    margin-right: auto;
+    align-items: stretch;
+    /* 버튼과 카드 높이를 맞추기 */
+}
+
+.myrate__diary-card {
+    background-color: #fff;
+    /* 흰색 배경 */
+    border-radius: 5px;
+    /* 둥근 모서리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 65%;
+    height: auto;
+}
+
+.myrate__diary-card__image {
+    width: 100%;
+    /* 너비를 부모 요소에 맞추기 */
+    aspect-ratio: 5 / 3;
+    /* 높이를 자동으로 설정 */
+    object-fit: cover;
+    /* 이미지를 부모의 크기에 맞게 자르기 */
+    border-radius: 5px 5px 0px 0px;
+    /* 이미지에 둥근 모서리 추가 */
+}
+
+
+.myrate__diary-card h4 {
+    padding: 10px 10px 5px 10px;
+    font-size: 16px;
+    /* 제목 크기 */
+}
+
+.myrate__diary-card p {
+    padding: 0px 10px;
+    margin: 5px 0;
+    /* 내용 간격 */
+    font-size: 14px;
+    /* 내용 크기 */
+    color: #555;
+    /* 어두운 회색 */
+}
+
+.myrate__diary-card span {
+    font-size: 12px;
+    /* 날짜 크기 */
+    color: #aaa;
+    /* 연한 회색 */
+}
+
+.myrate__diary-card__content {
+    display: -webkit-box;
+    /* Flexbox 대안으로 사용 */
+    -webkit-box-orient: vertical;
+    /* 세로 방향으로 텍스트 자르기 */
+    overflow: hidden;
+    /* 넘치는 텍스트 숨기기 */
+    text-overflow: ellipsis;
+    /* 말줄임표 추가 */
+    line-height: 1.5;
+    /* 줄 간격 */
+    max-height: calc(1.5em * 3);
+    /* 세 줄 높이만큼 제한 */
+    word-wrap: break-word;
+    /* 단어가 길어질 경우 줄 바꿈 허용 */
+    overflow-wrap: break-word;
+    /* 단어가 길어질 경우 줄 바꿈 허용 */
+}
+
+.next-previous-button-left {
+    margin: 0px 10px;
+    border-radius: 5px;
+    width: 40px;
+    /* 버튼 너비 조정 */
+    background: linear-gradient(to right, #fff, #EFEFEF);
+    border: none;
+    /* 테두리 없음 */
+    cursor: pointer;
+    /* 커서 변경 */
+    display: flex;
+    /* 수직 중앙 정렬을 위한 Flexbox */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    /* 기본적으로 숨김 */
+    transition: opacity 0.3s;
+    /* 부드러운 전환 효과 */
+}
+
+.next-previous-button-right {
+    margin: 0px 10px;
+    border-radius: 5px;
+    width: 40px;
+    /* 버튼 너비 조정 */
+    background: linear-gradient(to left, #fff, #EFEFEF);
+    border: none;
+    /* 테두리 없음 */
+    cursor: pointer;
+    /* 커서 변경 */
+    display: flex;
+    /* 수직 중앙 정렬을 위한 Flexbox */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    /* 기본적으로 숨김 */
+    transition: opacity 0.3s;
+    /* 부드러운 전환 효과 */
+}
+
+.next-previous-button-left:hover,
+.next-previous-button-right:hover {
+    opacity: 1;
+    /* 마우스가 올라갔을 때 보이게 설정 */
+}
+
+/* styles.css 또는 diaries_forest.css에 추가 */
+.resizable {
+    position: relative;
+  }
+  
+  .resizable img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .resizable .resize-handle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    right: 0;
+    bottom: 0;
+    cursor: nwse-resize; /* 드래그 커서 */
+  }
+  
+  
